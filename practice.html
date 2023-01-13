@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="1.js/main.js"></script>
+    
+    <title>Document</title>
+
+    <style>
+        html,body {width:100%;height:100%;margin:0px;padding:0px;overflow:hidden;
+            font-family: 'sans serif';}
+	#fullpage {position:relative;top:0px;z-index:9;width:100%;height:100%;}
+	.fullsection{width:100%;height:100%;position:relative;}
+	.full1{background:red;}
+    #full1-wrap{width: 100%; height: 100%; display:flex; justify-content: center; 
+        align-items: center ;position: absolute;}
+    #main{width: 100%; height: 100%; position:relative;  }
+    #main-logo{width: 50%; height: 60%; position: absolute; }
+	.full2{background:yellow;}
+	.full3{background:green;}
+	.full4{background:blue;}
+	.full5{background:purple;}
+	#fullpage span{display:block;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+        color:transparent; font-size: 4em; font-weight:bold; 
+        z-index:200;  -webkit-text-stroke: 0.5px white;}
+    
+        #fullpage span:hover{color:white; cursor:pointer;}
+
+	.full2 span{color:#000;}
+
+    /* addclass */
+    ul, li{margin:0;padding:0;list-style:none}
+	.quick {position:fixed;right:20px;top:50%;transform:translateY(-50%); z-index:100000}
+	.quick li {width:10px;height:10px;margin-bottom:10px; border-radius:15px;border:2px solid #fff;cursor:pointer;}
+	.quick .on {background:#fff;}
+
+    </style>
+</head>
+<body>
+    <div id="fullpage">
+		<div class='quick'><ul></ul></div>
+
+		<div class="fullsection full1" pageNum="1"> <span>지금 판도라 행성으로 떠나시겠습니까?</span>
+            <img src="img/eyes.jpg" alt="avatar2" id="main">
+            <div id="full1-wrap">  
+        <img src="img/logo_main.png" alt="logo_main" id="main-logo">
+        </div>
+        </div>
+
+		<div class="fullsection full2" pageNum="2"><span>2 PAGE</span></div>
+		<div class="fullsection full3" pageNum="3"><span>3 PAGE</span></div>
+		<div class="fullsection full4" pageNum="4"><span>4 PAGE</span></div>
+		<div class="fullsection full5" pageNum="5"><span>5 PAGE</span></div>
+	</div>
+</body>
+
+
+</html>
