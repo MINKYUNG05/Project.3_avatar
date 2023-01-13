@@ -83,11 +83,21 @@ function quickClick(){
 	});
 }
 
-
 $(function(){
     $('#fullpage span').click(function(){
-        $(this).animate({fontSize:'2000px'},1000,function(){
+        $(this).animate({fontSize:'2000px'},1500,function(){
             $('.full1').fadeOut();
         });
     });
 });
+
+
+
+
+
+// $(function(){
+//     $('#fullpage span').click(function(){
+//         $(this).css("font-size","500px"),700,function(){
+//             $('.full1').fadeOut();}
+// 		});
+// });s
