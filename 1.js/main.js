@@ -92,6 +92,29 @@ $(function(){
 });
 
 
+$(function(){
+    $('#myDIV').click(function(){
+        $(this).animate({fontSize:'3000px'},1500,function(){
+            $('.bg').fadeOut();
+        });
+    });
+});
+
+$(function(){
+    $('#chater1').click(function(){
+        $('#textbox').slideToggle("slow");
+		$('#textbox2').hide("slow");
+        });
+    });
+
+$(function(){
+	$('#chater2').click(function(){
+		$('#textbox').hide("slow");
+		$('#textbox2').slideToggle("slow");
+		});
+	});
+
+
 
 
 
