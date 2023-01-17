@@ -13,36 +13,70 @@
      html,body {width:100%;height:100%;margin:0px;padding:0px;overflow:hidden;
             font-family: 'sans serif'; box-sizing:border-box;}
 
-	.bg img{position:relative;width:100%;height:100vh;}
+	.bg img{position:relative;width:100%;height:100vh;z-index:200; }
 
     #myDIV {border: 1px solid white; width: 100%; height: 100%;
         /* animation: mymove 14s infinite;  */
         transform-origin:center; position:absolute;margin: 0 auto; overflow:hidden;
-    display:flex; justify-content: center; align-items:center; font-size:100px;}
+    display:flex; justify-content: center; align-items:center; font-size:100px; }
 
-    #myDIV p{text-align:center; color:gold; position:absolute; z-index:200; 
-        white-space:nowrap; 
-        font-weight: bolder; vertical-align: center; }
+    #myDIV p{text-align:center; color:gold; position:absolute; z-index:300; 
+        white-space:nowrap; font-weight: bolder; vertical-align: center; }
     #myDIV p:hover{color:white; cursor:pointer;}
 
     /* @keyframes mymove { 100% {font-size: 2000px;} } */
 
     /* #next{width: 100%; height: 100%; background-color:white;} */
     
+/* slider-video */
+   #slider{width: 100%; height: 100%;position:relative;}
+   #myVideo { position: fixed;right: 0;top: -280px; min-width: 100%;min-height: 150%;}
    
+   #text{width: 100%; height:100%; display:flex; 
+        justify-content: center; flex-direction: column; align-items: center; z-index: 200; }
+    #logo-main{width: 14%; height: auto; position:absolute;top:0; left:100;}
+    #text span{ font-size: 30px; position:absolute; bottom:130px; left:100; color: white; font-weight: bolder;}
+    #main-arrow{width: 3%; height: 5%; position:absolute; bottom:20px; left:100; color: white;
+                animation: mymove 1.5s infinite Alternate; cursor:pointer;
+
+            }
+    @keyframes mymove {
+        0% {
+                bottom: 50px;
+            }
+        100% {
+            bottom: 20px;
+            }
+    }
+
+   
+        #box1{width: 100%; height: 2000px; background-color:black;}
 
     </style>
 </head>
 <body>
-    <div class="bg"> 
+    <!-- <div class="bg"> 
         <div id="myDIV">
             <p>ONE LIFE ENDS, ANOTHER BEGINS</p>
           </div>
           
         <img src="img/eyes.jpg" alt="avatar2" id="main">
+    </div> -->
+
+<!-- slider-video -->
+    <div id="slider">
+        <video autoplay muted loop id="myVideo">
+            <source src="video/video2.mp4" type="video/mp4">
+          </video>
+        <div id=text>
+            <img src="img/logo_main.png" id="logo-main">
+            <span>판도라 행성에서 여러분의 모험을 시작하세요.</span>
+            <img src="img/down-arrow.png" id="main-arrow">
+        </div>
     </div>
 
-    <div id="next"></div>
+    <div id="box1">
+     <div>
 
 </body>
 </html>
