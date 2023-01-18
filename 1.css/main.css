@@ -1,23 +1,69 @@
 @charset "utf-8";
 
 *{margin: 0; padding: 0; box-sizing: border-box;}
-html,body {width:100%;height:100%;margin:0px;padding:0px;overflow:hidden;}
 
-#opening{width: 100%; height: 1000px; background-color:gold;}
-#opening img{width: 100%; height: 100%; }
+html,body {width:100%;height:100%;margin:0px;padding:0px;overflow:hidden;font-family:sans-serif;}
+	
+	#fullpage {position:relative;top:0px;z-index:9;width:100%;height:100%;}
+	.fullsection{width:100%;height:100%;position:relative;}
+	.full1{background-color:black;} 
+    #slider{width: 100%; height: 100%;position:relative;}
+    #slider Video{ position: fixed; 
+		right: 0; top: -300px; 
+		min-width: 100%; min-height: 150%;}
+   
+   #text{width: 100%; height:100%; display:flex; 
+        justify-content: center; flex-direction: column; align-items: center; z-index: 200; }
+    #logo-main{width: 14%; height: auto; position:absolute;top:0; left:100;}
+    #text span{ font-size: 20px; position:absolute; bottom:40px; left:100; color: white; font-weight: bolder;}
+    #main-arrow{width: 3%; height: 5%; position:absolute; bottom:20px; left:100; color: white;
+                animation: mymove 1.5s infinite Alternate; cursor:pointer;
+
+            }
+    @keyframes mymove {
+        0% {
+                bottom: 50px;
+            }
+        100% {
+            bottom: 20px;
+            }
+    }
 
 
-#mainwrap{width: 100%; height: 100%; position:relative;}
-#nav{width: 100%; height: 110px; display:flex; justify-content: space-between; align-items: center; 
-    background-color:rgba(117, 115, 115, 0.243); position:absolute; top:0;  left:0; z-index: 100;}
-    #logo img{width: 90px; height: 85px; margin: 0 auto; }
-    #nav-icon img{width: 60px; height: 80px; margin: 0 auto;}
+	.full2{background:yellow;}
 
-#slider video{width: 100%; height: 100%; background-color: pink; margin: 0 auto; }
+	#int-wrap{width: 100%; height: 100%; }
+        #bg{width: 100%; height: 100vh; position:relative; position:fixed; overflow:hiddne;}
 
-#intro{width: 100%; height: 100%; margin:0 auto; position:relative;}
-    #intro img{width: 100%; height: 1000px; }
-#character{width: 90%; height: 100%; display:flex; justify-content: space-evenly; align-items: center;}
-    #character img{width: 25%; height: auto; position:absolute; top:0; }
+        #chater1{width: 500px ; height:auto; position:absolute; bottom:0; right:80px;z-index:100; }
+        #chater2{width: 500px; height:auto; position:absolute; bottom:0; left:80px;z-index:100; }
 
-    #text{width: 20%; height: 50%; background-color: gold; position:absolute;}
+        #chater1:hover{ transform: scale(1.1); cursor:pointer; transition: all .2s ease-in-out;}
+        #chater2:hover{ transform: scale(1.1); cursor:pointer; transition: all .2s ease-in-out;}
+
+
+            #bush1{width: 100%; height:50%; position:absolute; bottom:0; right:0; z-index:100;}
+            #bush2{width: 100%; height:50%; position:absolute; top:0; right:0;}
+
+
+            #textbox{width: 30%; height:50%; position:absolute; top:300px; right:700px; z-index:100;  
+                    background-color:black;text-align:center; margin: 0 auto; display:none;}
+                #textbox span{color:white; font-size:50px; font-weight:bolder; }
+                #minibox{width: 90%; height:80%; background-color:gray; text-align:center; margin:0 auto; }
+                #minibox p{font-size: 15px;}
+
+            #textbox2{width: 30%; height:50%; position:absolute; top:300px; right:700px; z-index:100;  
+                    background-color:skyblue;text-align:center; margin: 0 auto; display:none;}
+            #textbox2 span{color:black; font-size:50px; font-weight:bolder;}
+            #minibox2{width: 90%; height:80%; background-color:lightcyan; text-align:center; margin:0 auto; }
+            #minibox2 p{font-size: 15px;}
+	.full3{background:green;}
+	.full4{background:blue;}
+	.full5{background:purple;}
+	#fullpage span{display:block;position:absolute;bottom:10%;left:50%;transform:translate(-50%,-50%);color:#fff;font-size:2em;font-weight:bold;}
+	.full2 span{color:#000;}
+
+	ul, li{margin:0;padding:0;list-style:none}
+	.quick {position:fixed;right:20px;top:50%;transform:translateY(-50%); z-index:100000}
+	.quick li {width:10px;height:10px;margin-bottom:10px; border-radius:15px;border:2px solid #fff;cursor:pointer;}
+	.quick .on {background:#fff;}
