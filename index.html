@@ -4,87 +4,88 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
     <!-- <link rel="stylesheet" href="1.css/common.css"> -->
-    <!-- <link rel="stylesheet" href="1.css/main.css"> -->
+    <link rel="stylesheet" href="1.css/main.css">
 
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.2.js"></script>
     <link rel="stylesheet" href="1.js/main.js">
 
-    <title>Document</title>
-    <style>
-        html,body {margin:0px;padding:0px; font-family: 'papyrus'; 
-        font-weight: bolder; box-sizing:border-box; font-weight:bolder;
-        color:white; background-color: black;}
-
-        ul,li,ol{text-decoration: none; list-style: none;}
-
-        header{width: 100%; height: 140px; background-color: lightgreen;}
-
-        #upimg{width: 100%; height: 1200px; background-image: url(img/eyes.jpg); background-position: center;
-            background-size:cover; display:flex; justify-content: center; align-items: center;  }
-        #upimg img{width: 20%; height: auto; }
-
-
-
-        #banner-move{overflow:hidden;position:relative; width:90%; height:150px; margin: 0 auto; 
-            margin-top: 100px; margin-bottom: 200px;}
-        #banner-box{width:25000px; height:100%; display:flex; flex-wrap:nowrap; animation: bannermove 17s linear infinite;}
-         @keyframes bannermove {
-        0% {
-        transform: translate(0, 0);
-             }
-        100% {
-        transform: translate(-20%, 0);
-            }
-            }
-
-        #banner-box img{margin: 0 50px;}
-
-
-
-        #bg{width: 100%; height: 100%; background-color:black;}
-        #bg-wrap{width:90%; height: 100%; background-color:black; 
-            display:flex; justify-content: center; align-items: center; margin: 0 auto;}
-        
-
-        #line1{width:30%; height: 100%; background-color: black; display:flex; flex-direction: column; justify-content: center; align-items: center;}
-        .first{width: 90%; height: 20%; background-color: black; display:flex;  align-items: center; 
-            text-align:center; font-size:20px; justify-content: center; margin: 140px 0 140px 0;}
-        .first span{font-size:70px; }
-        .first p{line-height: 26px;}
-
-
-
-
-        #line2{width:30%; height: 100%; background-color: black; display:flex; flex-direction: column; justify-content: center; align-items: center;}
-        .second{width:90%; height: 20%; background-color:black; display:flex; align-items: center;flex-direction: column; 
-            text-align:center; justify-content: center; margin: 30px 0 30px 0;}
-        .second p:nth-child(1){font-size:35px;}
-        .second p:nth-child(3){font-size:25px;}
-  
-        
-        
-        #line3{width:30%; height: 100%; background-color: black; display:flex; flex-direction: column; justify-content: center; align-items: center;}
-        .third{width:90%; height: 20%; background-color:black; display:flex; align-items: center;
-            text-align:center; font-size:20px; justify-content: center; margin: 140px 0 140px 0;}
-        .third span{font-size:70px; }
-        .third p{line-height: 26px;}
-
-        .left{width:15%; margin: 0 10px;}
-        .right{width:15%; margin: 0 10px; transform: scaleX(-1);}
-
-        hr{width:80%; border: 1px solid white; margin: -10px 0 20px 0;}
-
-
-        #downimg img{width:100%; height: 100%; }
-        #footer{width: 100%; height: 200px; background-color: blue;}
-
-
-    </style> 
+    <title>AVATAR | The Way of Water</title>
+       
 </head>
 <body>
  
     <header></header>
+
+    <div id="slider">
+        <video src="video/1080_edit.mp4" loop autoplay muted></video>
+        <div id=text>
+            <span>판도라 행성에서 여러분의 모험을 시작하세요.</span>
+            <img src="img/down-arrow.png" id="main-arrow">
+        </div>
+    </div>
+
+    <div id="slide-1">
+        <div class="slide-wrap">
+        <div class="textbox">
+            <p>나비족과 함께 맞서 싸우세요!</p>
+            <p>Track and share sightings of dinosaurs in your area 
+                with the Dinotracker AR app, the official companion 
+                app of Jurassic World Dominion. Scan your surroundings 
+                to discover hidden dinosaur activity across multiple types of environments.</p>
+            
+            <button>Download Now</button>
+        </div>
+    </div>
+    </div>
+
+    <div id="slide-2">
+        <div class="slide-wrap">
+            <div class="textbox">
+                <p>인간들로부터 아이들을 지켜주세요!</p>
+                <p>Track and share sightings of dinosaurs in your area 
+                    with the Dinotracker AR app, the official companion 
+                    app of Jurassic World Dominion. Scan your surroundings 
+                    to discover hidden dinosaur activity across multiple types of environments.</p>
+                
+                <button>Download Now</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="slide-3">
+        <div class="slide-wrap">
+            <div class="textbox">
+                <p>판도라 행성을 탐험하세요!</p>
+                <p>Track and share sightings of dinosaurs in your area 
+                    with the Dinotracker AR app, the official companion 
+                    app of Jurassic World Dominion. Scan your surroundings 
+                    to discover hidden dinosaur activity across multiple types of environments.</p>
+                
+                <button>Download Now</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="slide-4">
+        <div class="slide-wrap1">
+            <div class="textbox1">
+                <p>이번엔 물 속에서 새로운 모험을 시작한다!</p>
+                <p>Track and share sightings of dinosaurs in your area 
+                    with the Dinotracker AR app, the official companion 
+                    app of Jurassic World Dominion. Scan your surroundings 
+                    to discover hidden dinosaur activity across multiple types of environments.</p>
+                
+                <button>Download Now</button>
+            </div>
+        </div>
+    </div>
+
 
 
     <div id="upimg">
