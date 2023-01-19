@@ -14,34 +14,59 @@
     <style>
         html,body {margin:0px;padding:0px; font-family: 'papyrus'; 
         font-weight: bolder; box-sizing:border-box; font-weight:bolder;
-        color:white;}
+        color:white; background-color: black;}
+
         ul,li,ol{text-decoration: none; list-style: none;}
 
-        #bg{width: 100%; height: 100%; background-color:red;}
+        header{width: 100%; height: 140px; background-color: lightgreen;}
+
+        #upimg{width: 100%; height: 1200px; background-image: url(img/eyes.jpg); background-position: center;
+            background-size:cover; display:flex; justify-content: center; align-items: center;  }
+        #upimg img{width: 20%; height: auto; }
+
+
+
+        #banner-move{overflow:hidden;position:relative; width:90%; height:150px; margin: 0 auto; 
+            margin-top: 100px; margin-bottom: 200px;}
+        #banner-box{width:25000px; height:100%; display:flex; flex-wrap:nowrap; animation: bannermove 17s linear infinite;}
+         @keyframes bannermove {
+        0% {
+        transform: translate(0, 0);
+             }
+        100% {
+        transform: translate(-20%, 0);
+            }
+            }
+
+        #banner-box img{margin: 0 50px;}
+
+
+
+        #bg{width: 100%; height: 100%; background-color:black;}
         #bg-wrap{width:90%; height: 100%; background-color:black; 
             display:flex; justify-content: center; align-items: center; margin: 0 auto;}
         
 
-        #line1{width:30%; height: 100%; background-color: white; display:flex; flex-direction: column; justify-content: center; align-items: center;}
+        #line1{width:30%; height: 100%; background-color: black; display:flex; flex-direction: column; justify-content: center; align-items: center;}
         .first{width: 90%; height: 20%; background-color: black; display:flex;  align-items: center; 
-            text-align:center; font-size:20px; justify-content: center; margin: 50px 0 50px 0;}
+            text-align:center; font-size:20px; justify-content: center; margin: 140px 0 140px 0;}
         .first span{font-size:70px; }
         .first p{line-height: 26px;}
 
 
 
 
-        #line2{width:30%; height: 100%; background-color: white; display:flex; flex-direction: column; justify-content: center; align-items: center;}
+        #line2{width:30%; height: 100%; background-color: black; display:flex; flex-direction: column; justify-content: center; align-items: center;}
         .second{width:90%; height: 20%; background-color:black; display:flex; align-items: center;flex-direction: column; 
-            text-align:center; justify-content: center; margin: 50px 0 50px 0;}
-        .second p:nth-child(1){font-size:45px;}
-        .second p:nth-child(3){font-size:30px;}
+            text-align:center; justify-content: center; margin: 30px 0 30px 0;}
+        .second p:nth-child(1){font-size:35px;}
+        .second p:nth-child(3){font-size:25px;}
   
         
         
-        #line3{width:30%; height: 100%; background-color: white; display:flex; flex-direction: column; justify-content: center; align-items: center;}
+        #line3{width:30%; height: 100%; background-color: black; display:flex; flex-direction: column; justify-content: center; align-items: center;}
         .third{width:90%; height: 20%; background-color:black; display:flex; align-items: center;
-            text-align:center; font-size:20px; justify-content: center; margin: 50px 0 50px 0;}
+            text-align:center; font-size:20px; justify-content: center; margin: 140px 0 140px 0;}
         .third span{font-size:70px; }
         .third p{line-height: 26px;}
 
@@ -50,13 +75,43 @@
 
         hr{width:80%; border: 1px solid white; margin: -10px 0 20px 0;}
 
-        header{width: 100%; height: 140px; background-color: lightgreen;}
-        #footer{width: 100%; height: 500px; background-color: blue;}
+
+        #downimg img{width:100%; height: 100%; }
+        #footer{width: 100%; height: 200px; background-color: blue;}
+
+
     </style> 
 </head>
 <body>
  
     <header></header>
+
+
+    <div id="upimg">
+        <img src="img/logo_main.png" alt="logo"> 
+    </div>
+
+
+    <div id="banner-move">
+        <div id="banner-box">
+        <img src="img/American_Film_Institute_(AFI)_logo.svg.png" alt="">
+        <img src="img/Hollywood_Critics_Association_Logo.jpg" alt="">
+        <img src="img/golden.webp" alt="">
+        <img src="img/british.PNG" alt="">
+        <img src="img/japan.png" alt="">
+        <img src="img/3D-Creative-Arts-Awards.jpg" alt="">
+        <img src="img/SATURN-AWARDS-logo.png" alt="">
+        <img src="img/oscar_logo.png" alt="">
+        <img src="img/laaward.webp" alt="">
+        <img src="img/The_National_Board_of_Review_Logo.png" alt="">
+        <img src="img/NYFCC-Logo-vertical-white.png" alt="">
+        <img src="img/stlouis.jpg" alt="">
+        <img src="img/da.png" alt="">
+        <img src="img/florida.PNG" alt="">
+
+        </div>
+    </div>
+
 
     <div id="bg">
         <div id="bg-wrap">
@@ -64,7 +119,7 @@
         <div id="line1">
             <div class="first">
                 <img src="img/1.png" alt="won" class="left">
-                <p><span>83/100</span><br><br>
+                <p><span>8.3/10</span><br><br>
                     Rotten Tomatoes</p>
                 <img src="img/1.png" alt="won" class="right">
             </div>
@@ -101,6 +156,26 @@
 
         <div id="line2">
             <div class="second">
+                <p>3D Creative Arts Awards</p><hr>
+                <p>Live Action 3D Feature</p>
+            </div>
+
+            <div class="second">
+                <p>Academy Awards</p><hr>
+                <p>Best Art Direction</p>
+            </div>
+
+            <div class="second">
+                <p>British Academy Film Awards</p><hr>
+                <p>Best Production Design</p>
+            </div>
+
+            <div class="second">
+                <p>Golden Globe Awards</p><hr>
+                <p>Best Director<br>Best Film of Drama<br>Best Original Score<br>Best Original Song </p>
+            </div>
+            
+            <div class="second">
                 <p>American Film Institute Awards</p><hr>
                 <p>Top 10 Films of the Year</p>
             </div>
@@ -136,19 +211,26 @@
             </div>
 
             <div class="second">
-                <p>San Diego Film Critics Society Awards</p><hr>
-                   <p> Best Visual Effects</p>
+                <p>Japan Academy Prize</p><hr>
+                   <p> Outstanding Foreign Language Film</p>
             </div>
 
             <div class="second">
-                <p>St. Louis Gateway Film Critics Association Awards</p><hr>
-                    <p>Best Visual Effects</p>
+                <p>Saturn Awards</p><hr>
+                    <p>Best Science Fiction Film<br>Best Actor<br>Best Actress<br>Best Supporting Actor
+                    <br>Best Director<br>Best Writing<br>Best Music<br>Best Production Design</p>
             </div>
 
             <div class="second">
                 <p>Los Angeles Film Critics Association Awards</p><hr>
                    <p> Best Production Design</p>
             </div>
+
+            <div class="second">
+                <p>Scream Awards</p><hr>
+                   <p> Best Director<br>Best F/X</p>
+            </div>
+
         </div>
 
         <div id="line3">
@@ -161,28 +243,28 @@
 
             <div class="third">
                 <img src="img/1.png" alt="won" class="left">
-                <p><span>4.5/5</span><br><br>
+                <p><span>9.0/10</span><br><br>
                     ETimes</p>
                 <img src="img/1.png" alt="won" class="right">
             </div>
 
             <div class="third">
                 <img src="img/1.png" alt="won" class="left">
-                <p><span>4/5</span><br><br>
+                <p><span>8.0/10</span><br><br>
                     NDTV movie</p>
                 <img src="img/1.png" alt="won" class="right">
             </div>
 
             <div class="third">
                 <img src="img/1.png" alt="won" class="left">
-                <p><span>3.5/5</span><br><br>
+                <p><span>7.0/10</span><br><br>
                     Filmfocus</p>
                 <img src="img/1.png" alt="won" class="right">
             </div>
 
             <div class="third">
                 <img src="img/1.png" alt="won" class="left">
-                <p><span>4.5/5</span><br><br>
+                <p><span>9.0/10</span><br><br>
                     ZoomTV</p>
                 <img src="img/1.png" alt="won" class="right">
             </div>
@@ -192,6 +274,9 @@
         </div>
     </div>
 
+    <div id="downimg">
+
+    </div>
 
     <div id="footer"></div>
    
