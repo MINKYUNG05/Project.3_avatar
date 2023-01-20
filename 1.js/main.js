@@ -3,7 +3,7 @@
 $(document).ready(function () {
     $(".menu_icon").click(function () {
         $(this).toggleClass("active")
-        $('.header_menu').toggleClass('right');
+        $('.header_menu').toggleClass('width100');
     });
 
     $('.footer_menu_wrap').hide();
